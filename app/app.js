@@ -58,6 +58,6 @@ app.delete('/api/posts/:id', (req, res) => {
   res.send(post);
 });
 
-app.listen(3000, function () {
-  console.info('Server is running at 3000')
+app.listen(process.env.PORT || 3000, function () {
+  console.info('Server is running')
 });
